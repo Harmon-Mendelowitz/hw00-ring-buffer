@@ -1,7 +1,7 @@
 .PHONY: all plot test clean
 
 CC=gcc
-CFLAGS=-std=gnu99 -Wall -pedantic -Werror
+CFLAGS=-std=gnu99 -Wall -pedantic -Werror -Wno-stringop-truncation
 
 all: test_ring filter
 
